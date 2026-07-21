@@ -13,9 +13,9 @@ env.bak/
 venv.bak/
 
 # ML/DL models
-*.h5
-*.keras
-models/
+# *.h5
+# *.keras
+# models/
 
 # Dataset and uploads
 dataset/

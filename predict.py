@@ -18,7 +18,7 @@ try:
     TRAIN_DIR = os.path.join('Shoes Dataset', 'Train')
     CLASS_NAMES = sorted(os.listdir(TRAIN_DIR))
 except Exception:
-    CLASS_NAMES = ['Ballet Flat', 'Boat', 'Brogue', 'Clog', 'Sneaker'] # Placeholder fallback
+    CLASS_NAMES = ['Ballet Flat', 'Boat'] # Placeholder fallback
 
 # Memuat model sekali agar cepat digunakan berulang kali
 model = None
