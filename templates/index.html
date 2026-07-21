@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row align-items-center min-vh-75 mt-4">
+    <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="pe-lg-5">
+            <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill shadow-sm">
+                <i class="bi bi-cpu me-1"></i> Capstone Project AI
+            </span>
+            <h1 class="display-4 fw-bolder mb-4 text-gradient">Klasifikasi Sepatu Cerdas dengan AI</h1>
+            <p class="lead text-secondary mb-4">
+                Sistem Computer Vision berbasis Transfer Learning (MobileNetV2 & EfficientNetB0) untuk mendeteksi dan mengklasifikasikan jenis sepatu dengan akurasi tinggi secara instan.
+            </p>
+            <div class="d-flex gap-3">
+                <a href="{{ url_for('predict') }}" class="btn btn-primary btn-lg rounded-pill px-4 shadow-lg hover-lift">
+                    <i class="bi bi-camera me-2"></i>Mulai Deteksi
+                </a>
+                <a href="{{ url_for('about') }}" class="btn btn-outline-secondary btn-lg rounded-pill px-4 hover-lift">
+                    <i class="bi bi-info-circle me-2"></i>Pelajari Lebih Lanjut
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 position-relative">
+        <!-- Hero Graphic with Glassmorphism -->
+        <div class="hero-card glass-panel p-4 rounded-4 shadow-lg text-center animate-float">
+            <div class="hero-icon mb-3">
+                <i class="bi bi-image display-1 text-primary"></i>
+                <i class="bi bi-arrow-right mx-3 display-4 text-muted"></i>
+                <i class="bi bi-tags display-1 text-success"></i>
+            </div>
+            <h4 class="fw-bold">Upload &rarr; Analisis &rarr; Klasifikasi</h4>
+            <p class="text-muted small mb-0">Didukung oleh arsitektur Convolutional Neural Networks canggih.</p>
+        </div>
+        
+        <!-- Decoration elements -->
+        <div class="blob shape-1"></div>
+        <div class="blob shape-2"></div>
+    </div>
+</div>
+{% endblock %}

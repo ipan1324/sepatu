@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card glass-panel border-0 shadow-sm rounded-4 overflow-hidden mb-5">
+            <div class="card-body p-5">
+                <h2 class="fw-bold mb-4 text-primary">Tentang Capstone Project</h2>
+                <p class="lead text-secondary">
+                    Proyek ini merupakan implementasi nyata dari konsep <strong>Kecerdasan Buatan</strong> pada ranah <strong>Computer Vision</strong>. Fokus utamanya adalah membandingkan kinerja model <em>Transfer Learning</em> untuk mengenali dan mengklasifikasikan gambar sepatu ke dalam berbagai kategori.
+                </p>
+                
+                <hr class="my-5">
+                
+                <h4 class="fw-bold mb-4">Arsitektur Model</h4>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="p-4 bg-light rounded-4 h-100 border border-primary-subtle shadow-sm hover-lift">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-cpu text-primary fs-3 me-3"></i>
+                                <h5 class="fw-bold mb-0">MobileNetV2</h5>
+                            </div>
+                            <p class="text-muted small">
+                                Arsitektur ringan yang didesain untuk perangkat seluler. Memiliki keunggulan dalam kecepatan komputasi dan ukuran model yang sangat kecil berkat <em>depthwise separable convolutions</em>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-4 bg-light rounded-4 h-100 border border-success-subtle shadow-sm hover-lift">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-lightning-charge text-success fs-3 me-3"></i>
+                                <h5 class="fw-bold mb-0">EfficientNetB0</h5>
+                            </div>
+                            <p class="text-muted small">
+                                Arsitektur mutakhir yang dioptimalkan secara matematis melalui <em>compound scaling</em> (menyeimbangkan kedalaman, lebar, dan resolusi). Biasanya memberikan akurasi yang lebih tinggi dengan parameter yang lebih efisien dibandingkan arsitektur CNN klasik.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <h4 class="fw-bold mb-4">Teknologi yang Digunakan</h4>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-dark px-3 py-2 fs-6">Python 3.11</span>
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6">TensorFlow 2.x</span>
+                    <span class="badge bg-danger px-3 py-2 fs-6">Keras</span>
+                    <span class="badge bg-primary px-3 py-2 fs-6">Scikit-Learn</span>
+                    <span class="badge bg-info text-dark px-3 py-2 fs-6">OpenCV</span>
+                    <span class="badge bg-secondary px-3 py-2 fs-6">Flask</span>
+                    <span class="badge bg-success px-3 py-2 fs-6">NumPy & Pandas</span>
+                    <span class="badge" style="background-color: #7952b3; color: white;">Bootstrap 5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
