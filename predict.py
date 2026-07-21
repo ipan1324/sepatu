@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
 # Gunakan model terbaik yang ingin di-deploy.
 # Anda bisa mengubah ini ke 'models/mobilenetv2_model.keras' jika ingin menggunakan MobileNetV2
-MODEL_PATH = 'models/efficientnetb0_model.keras'
+MODEL_PATH = 'models/efficientnetb0_model.h5'
 
 # Mapping index kelas ke nama label (Harus sesuai dengan urutan saat training)
 # Karena model di-train menggunakan flow_from_directory, urutan ini biasanya sesuai urutan alfabetis folder.
