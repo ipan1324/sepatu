@@ -2,6 +2,7 @@ Flask==3.0.2
 Werkzeug==3.0.1
 Keras==3.1.1
 tensorflow==2.16.1
+tf-keras==2.16.0
 scikit-learn==1.4.1.post1
 opencv-python-headless==4.9.0.80
 numpy==1.26.4

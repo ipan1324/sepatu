@@ -1,4 +1,5 @@
 import os
+os.environ['TF_USE_LEGACY_KERAS'] = '1'
 import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
